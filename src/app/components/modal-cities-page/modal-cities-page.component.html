@@ -10,26 +10,26 @@
     <h3 class="child-header" color="medium" >
        أبحث عن واجهتك و أختر من قائمة المدن
     </h3>
-    <ion-toolbar>
-      <ion-searchbar
-      [showCancelButton]="shouldShowCancel"
-      (ionCancel)="onCancel($event)"
-      (ionInput)="filterList($event)">
+    
+    <ion-toolbar class="search-toolbar">
+      <ion-searchbar 
+      (ionInput)="filterList($event)"
+      color="ligth"
+      showClearButton="focus"
+      icon-color="primary"
+      placeholder="أبحث عن المدينة"
+      search-icon="search-sharp"	
+      >
     </ion-searchbar>
     </ion-toolbar>
-  </div>
-  <hr/>
-<ion-content color="light" class="content-scroll">
-  <ion-list  color="light">
-    <ion-item *ngFor="let item of cities" color="light" (click)="selectedCity(item)">
-        <h2>{{item.city}}</h2>
-    </ion-item>
-  </ion-list>
+  
+  <hr />
+
+</div>
+<ion-content  class="content-scroll">
+  <!-- <ion-list  > -->
+        <h4 class="city-name" *ngFor="let item of cities">{{item.city}}</h4>
+  <!-- </ion-list> -->
 </ion-content>
-  <hr/>
-  <div class="btn-bottom">
-    <ion-button  shape="round" class="btn-next" color="primary"   size="large" >
-      متابعة
-    </ion-button>
-  </div>
+
 </div>

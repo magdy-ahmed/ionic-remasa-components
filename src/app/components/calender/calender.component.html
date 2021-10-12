@@ -2,5 +2,7 @@
     [controls]="['calendar']"
     select="range"
     display="inline"
-    [touchUi]="true">
+    [touchUi]="true"
+    [(ngModel)]="range"
+    (onChange)="selected()">
 </mbsc-datepicker>

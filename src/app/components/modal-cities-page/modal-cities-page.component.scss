@@ -1,28 +1,21 @@
 .container{
     width: 100%;
     height: 100%;
-    background-color:var(--ion-color-light, #fff);
     direction: rtl;
 }
 .header{
     padding-right: 4px;
-    padding-bottom: 10%;
-    height: 20%;
+
+
 }
 .back-icon {
     font-size: 30px;
-position:absolute;
-top: 8%;
-right: 1%;
-
-color: var(--ion-color-dark-tint);
-
+    position:absolute;
+    top: 5%;
+    right: 1%;
+    color: var(--ion-color-dark-tint);
   }
-
 .main-header{
-    // color:var(--ion-color-dark, #000);
-    // color: var(--ion-color-light-contrast);
-    margin-top: 20px;
     color: var(--ion-color-dark-tint);
     text-align: center;
     font-weight: bolder;
@@ -35,30 +28,17 @@ color: var(--ion-color-dark-tint);
 hr {
     border-top: 1px solid var(--ion-color-medium, #aaa) !important;
     width: 100% !important;
+    display: block;
   }
   ion-list{
       padding: 0px !important;
   }
   .content-scroll{
-    background-color:var(--ion-color-light, #fff);
-    height: 50%;
-  }
-  .btn-bottom{
-    position: relative;
-    height: 100px;
-    min-height: 20%;
+    height: 64%;
 
-    
   }
-.btn-next{
-    width: 220px;
-    margin: 0;
-    max-width: 75%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
-    font-weight: bolder;
+
+.city-name{
+  padding: 8px;
+  margin-right: 15px;
 }
-

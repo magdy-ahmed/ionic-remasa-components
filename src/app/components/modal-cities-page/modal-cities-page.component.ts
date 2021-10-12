@@ -11,10 +11,15 @@ export class ModalCitiesPageComponent implements OnInit {
     {'id':2,"city":"القاهرة",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
     {'id':3,"city":"بور سعيد",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
     {'id':4,"city":"أسوان",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
-    {'id':5,"city":"الأقصر",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'}
+    {'id':5,"city":"الأقصر",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
+    {'id':6,"city":"الأسكندرية",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
+    {'id':7,"city":"القاهرة",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
+    {'id':8,"city":"بور سعيد",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
+    {'id':9,"city":"أسوان",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
+    {'id':10,"city":"الأقصر",'img':'https://pbs.twimg.com/profile_images/758084549821730820/_HYHtD8F.jpg'},
   ];
  
-  cities=[];
+  cities=this.citiesBekup;
   selected=[];
   constructor() { 
 

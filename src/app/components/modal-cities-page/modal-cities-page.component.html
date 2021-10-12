@@ -1,0 +1,35 @@
+
+
+<div class="container">
+  <div class="header">
+    <ion-icon class="back-icon" name="chevron-forward-outline"></ion-icon>
+    <h3 class="main-header"  color="dark">
+      <!-- {{'L_chooseYourSuitCat'| translate}} -->
+      أختر المدينة
+    </h3>
+    <h3 class="child-header" color="medium" >
+       أبحث عن واجهتك و أختر من قائمة المدن
+    </h3>
+    <ion-toolbar>
+      <ion-searchbar
+      [showCancelButton]="shouldShowCancel"
+      (ionCancel)="onCancel($event)"
+      (ionInput)="filterList($event)">
+    </ion-searchbar>
+    </ion-toolbar>
+  </div>
+  <hr/>
+<ion-content color="light" class="content-scroll">
+  <ion-list  color="light">
+    <ion-item *ngFor="let item of cities" color="light" (click)="selectedCity(item)">
+        <h2>{{item.city}}</h2>
+    </ion-item>
+  </ion-list>
+</ion-content>
+  <hr/>
+  <div class="btn-bottom">
+    <ion-button  shape="round" class="btn-next" color="primary"   size="large" >
+      متابعة
+    </ion-button>
+  </div>
+</div>

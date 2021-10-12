@@ -1,0 +1,47 @@
+
+
+<div class="container">
+  <div class="header">
+
+    <ion-icon class="back-icon" name="chevron-forward-outline"></ion-icon>
+    <h3 class="main-header"  color="dark">
+      <!-- {{'L_chooseYourSuitCat'| translate}} -->
+      أختر التصنيف المناسب لك
+    </h3>
+    <h3 class="child-header" color="medium" >
+       المدينة -
+       <span *ngFor="let item of selected">
+        <span *ngIf="selected.indexOf(item) > 0"> و </span>
+        {{item.category_name}}
+                
+       </span></h3>
+  </div>
+  <hr/>
+
+<ion-content color="light" class="content-scroll" >
+  <ion-list color="light">
+    <!-- <ion-item *ngFor="let item of categories" (click)="goByCategoties(item)">
+        <ion-avatar slot="start">
+          <img src="{{this.appUtils.UPLOAD_FOLDER}}categories/{{item.img}}" >
+        </ion-avatar>
+
+          <h2> {{item.category_name}}</h2>
+
+    </ion-item> -->
+    <ion-item *ngFor="let item of categories;" color="light" (click)="selectedCategory(item)">
+      <div class="avatar">
+        <img src="{{item.img}}">
+      </div>
+        <h2>{{item.category_name}}</h2>
+      <ion-icon *ngIf="selected.includes(item)" class="check-icon"  name="checkmark-outline"></ion-icon>
+    </ion-item>
+  </ion-list>
+</ion-content>
+  <hr/>
+  <div class="btn-bottom">
+    
+    <ion-button  shape="round" class="btn-next" color="primary"   size="large" >
+      متابعة
+    </ion-button>
+  </div>
+</div>

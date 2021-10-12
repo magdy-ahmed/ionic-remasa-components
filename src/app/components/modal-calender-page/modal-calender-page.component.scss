@@ -1,0 +1,112 @@
+.container{
+    width: 100%;
+    height: 100%;
+    background-color:var(--ion-color-light, #fff);
+    direction: rtl;
+}
+.header{
+    padding-right: 4px;
+    padding-bottom: 10%;
+    height: 20%;
+}
+.back-icon {
+    font-size: 30px;
+position:absolute;
+top: 8%;
+right: 1%;
+
+color: var(--ion-color-dark-tint);
+
+  }
+
+.main-header{
+    // color:var(--ion-color-dark, #000);
+    // color: var(--ion-color-light-contrast);
+    margin-top: 20px;
+    color: var(--ion-color-dark-tint);
+    text-align: center;
+    font-weight: bolder;
+}
+.child-header{
+    color: var(--ion-color-medium-shade);
+    text-align: center;
+}
+
+hr {
+    border-top: 1px solid var(--ion-color-medium, #aaa) !important;
+    width: 100% !important;
+  }
+  ion-list{
+      padding: 0px !important;
+  }
+  .calender{
+    background-color:var(--ion-color-light, #fff);
+    height: 50%;
+  }
+  .avatar{
+      width: 100px;
+      height: 100px;
+      margin-left: 10px;
+  }
+  .btn-bottom{
+    position: relative;
+    height: 100px;
+    min-height: 20%;
+
+    
+  }
+.btn-next{
+    width: 220px;
+    margin: 0;
+    max-width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    font-weight: bolder;
+}
+.check-icon{
+    float: left;
+    color: var(--ion-color-primary);
+    font-size: 20px;
+    float: left;
+    font-size: 35px;
+    position: absolute;
+    left: 20px;
+}
+.md-mobile-picker-header {
+    font-size: 14px;
+}
+
+input.md-mobile-picker-input {
+    color: initial;
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0 12px 0;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-family: arial, verdana, sans-serif;
+    font-size: 14px;
+    box-sizing: border-box;
+    -webkit-appearance: none;
+}
+
+.md-mobile-picker-button.mbsc-button {
+    font-size: 13px;
+    padding: 0 15px;
+    line-height: 36px;
+    float: right;
+    margin: 6px 0;
+    width: 100%;
+}
+
+.mbsc-col-no-padding {
+    padding-left: 0;
+}
+
+.md-mobile-picker-box-label.mbsc-textfield-wrapper-box,
+.md-mobile-picker-box-label .mbsc-textfield-wrapper-box,
+.md-mobile-picker-inline {
+    margin: 6px 0 12px 0;
+}

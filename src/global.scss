@@ -34,3 +34,18 @@
     border-radius: 7% 7% 0px 0px;
     bottom: 0px;
       }
+.my-custom-search-class .modal-wrapper{
+  width: 100% !important;
+  height: 95%;
+  position: absolute;
+  border: 1px 1px 0px 0px solid var(--ion-color-medium);
+  // border-radius: 3% 3% 0px 0px;
+  border-top-left-radius: 5% 3%;
+  border-top-right-radius: 5% 3%;
+  bottom: 0px;
+    }
+    .select-popover{
+      --width: 95%;
+      --backdrop-opacity: 70%;
+      direction: rtl;
+    }

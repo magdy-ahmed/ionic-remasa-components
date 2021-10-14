@@ -1,0 +1,124 @@
+.content-scroal{
+  // height: 90%;
+  --padding-bottom:90px;
+}
+.container{
+  height: 90%;
+  direction: rtl;
+}
+.icon-close{
+  position: absolute;
+  left: 20px;
+  top: 20px;
+  font-size: 20px;
+  font-weight: bolder;
+  color: var(--ion-color-danger-shade);
+  border: 1px solid var(--ion-color-medium);
+  border-radius: 9px;
+}
+.header{
+  height: 46px;
+  background-color: white;
+  border-bottom: 2px solid rgba(0,0,0,11%);
+}
+h1{
+  text-align: center;
+}
+// start style select
+ion-select::part(icon){
+  padding-right: 10px;
+  float: left;
+}
+ion-select::part(text){
+  margin-right: 5px;
+}
+ion-select::part(placeholder){
+  margin-right: 10px;
+}
+.box-item{
+  margin: auto;
+  width: 85%;
+  border: 3px solid var(--ion-color-light);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  box-shadow: 0px 0px 4px var(--ion-color-medium);
+
+}
+ion-select{
+  width: 100%;
+}
+
+.container-item{
+// margin-left: 10px;
+}
+.label-item{
+  margin-bottom: 24px;
+  margin-right: 33px;
+  margin-top: 13px;
+
+}
+// transfer to root sccs
+// .select-popover{
+//   --width: 95%;
+//   --backdrop-opacity: 70%;
+//   direction: rtl;
+// }
+
+// end style select
+// start style input
+.search-toolbar ,.time-input{
+  margin: auto;
+  width: 85%;
+  border: 3px solid var(--ion-color-light);
+  border-radius: 16px;
+  margin-bottom: 18px;
+  // margin-left: 20px;
+  box-shadow: 0px 0px 4px var(--ion-color-medium);
+}
+// end style input
+// start style range
+.min-range,.max-range{
+  margin: auto;
+  width: 50%;
+  border: 3px solid var(--ion-color-light);
+  border-radius: 16px;
+  // margin-bottom: 18px;
+  // margin-left: 20px;
+  margin-right: 25%;
+  box-shadow: 0px 0px 4px var(--ion-color-medium);
+  display: inline-block;
+}
+.min-range ion-input,.max-range ion-input{
+
+  text-align: center;
+}
+// end style range
+.label-item-child{
+  margin-bottom: 10px;
+  margin-right: 45px;
+  margin-top: 13px;
+  color: #222;
+  font-size: 15px;
+}
+.footer{
+  position: fixed;
+    bottom: 0;
+}
+.btn-r{
+  position: relative;
+  width: 100%;
+  height: 40px;
+}
+.btn-search {
+  margin-right: 0%;
+  position: absolute;
+  top: 50%;
+  transform: translate(50%, -50%);
+}
+.btn-clear{
+  margin-right: 0%;
+  position: absolute;
+  top: 50%;
+  transform: translate(15%, -50%);
+
+}

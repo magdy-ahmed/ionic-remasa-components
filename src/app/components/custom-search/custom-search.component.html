@@ -1,0 +1,134 @@
+<div class="container">
+  <div class="header">
+  <h1>تصفية النتائج</h1>
+  <ion-icon class="icon-close" name="close-outline"></ion-icon>
+</div>
+  <ion-content class="content-scroal">
+    <div class="container-item">
+      <div class="label-item">المدينة</div>
+      <ion-item class="box-item">
+        <ion-select mode="ios" [interfaceOptions]="popoverOptions" interface="popover" placeholder="Select One">
+          <ion-select-option *ngFor="let item of cities" value="item.id">{{item.city}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="container-item">
+      <div class="label-item">المنطقة</div>
+      <ion-item class="box-item">
+        <ion-select interface="popover" placeholder="Select One" [interfaceOptions]="popoverOptions">
+          <ion-select-option *ngFor="let item of areas" value="{{item.id}}">{{item.city}}</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+    <div class="container-item">
+        <div class="label-item">أبحث بأسم العقار</div>
+    <ion-toolbar class="search-toolbar">
+      <ion-input
+      (ionInput)="filterList($event)"
+      color="ligth"
+      placeholder="مثال: فيلا المرح"
+      >
+    </ion-input>
+    </ion-toolbar>
+      </div>
+      <div class="container-item">
+        <div class="label-item">تصفية النتائج بنوع البيت</div>
+
+        <ion-item class="box-item">
+          <ion-select interface="popover" placeholder="Select One">
+            <ion-select-option value="f">Female</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+      <div class="container-item">
+        <div class="label-item">تصفية النتائج بتوافر الملحقات</div>
+        <ion-item class="box-item">
+          <ion-select interface="popover" placeholder="Select One">
+            <ion-select-option value="f">Female</ion-select-option>
+          </ion-select>
+        </ion-item>
+      </div>
+      <div class="container-item">
+
+        <div class="label-item"> تصفية النتائج بالسعر</div>
+        <div class="range-price label-item-child">0 ريال الى 5000 ريال</div>
+        <ion-grid>
+          <ion-row>
+            <ion-col>
+        <div class="min-range">
+          <ion-input
+          (ionInput)="minRange($event)"
+          color="ligth"
+          placeholder="0"
+          >
+          </ion-input>
+        </div>
+      </ion-col>
+      <ion-col>
+        <div class="max-range">
+          <ion-input
+          (ionInput)="maxRange($event)"
+          color="ligth"
+          placeholder="9000"
+          >
+      </ion-input>
+
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-grid>
+      <ion-item>
+          <ion-range min="-200" max="200" color="secondary">
+            <ion-label slot="start">-200</ion-label>
+            <ion-label slot="end">200</ion-label>
+          </ion-range>
+        </ion-item>
+      </div>
+      <div class="container-item">
+        <div class="label-item"> تصفية النتائج بوقت الفتح و الأغلاق</div>
+        <div class="label-item-child"> وقت الفتح قبل الساعة</div>
+        <div class="time-input">
+          <ion-item>
+            <ion-select interface="popover" placeholder="Select One">
+              <ion-select-option *ngFor="let item of openAt" value="item">{{ item }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+        <div class="label-item-child"> وقت الأغلاق بعد الساعة</div>
+        <div class="time-input">
+          <ion-item>
+            <ion-select interface="popover" placeholder="Select One">
+              <ion-select-option *ngFor="let item of closeAt" value="item">{{ item }}</ion-select-option>
+            </ion-select>
+          </ion-item>
+        </div>
+      </div>
+
+</ion-content>
+<ion-footer class="footer">
+  <ion-toolbar>
+    <div class="btn-bottom">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+          </ion-col>
+          <ion-col>
+            <div class="btn-r">
+              <ion-button (click)="search()"   class="btn-search" color="primary" size="medium">
+                أظهر 33 عقار
+              </ion-button>
+            </div>
+          </ion-col>
+          <ion-col>
+            <div class="btn-r">
+              <ion-button  fill="outline" class="btn-clear" color="medium" size="medium" >
+                مسح الكل
+              </ion-button>
+            </div>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </ion-toolbar>
+</ion-footer>
+</div>

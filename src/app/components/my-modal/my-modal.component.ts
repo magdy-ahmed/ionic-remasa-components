@@ -1,10 +1,10 @@
+import { CustomSearchComponent } from './../custom-search/custom-search.component';
 import { Component, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
 import { MyModalPageComponent } from '../my-modal-page/my-modal-page.component';
 import { ModalCalenderPageComponent } from '../modal-calender-page/modal-calender-page.component';
 import { Tab1Page } from '../../tab1/tab1.page';
 import { ModalCitiesPageComponent } from '../modal-cities-page/modal-cities-page.component';
-
 
 @Component({
   selector: 'app-my-modal',
@@ -13,12 +13,12 @@ import { ModalCitiesPageComponent } from '../modal-cities-page/modal-cities-page
 })
 export class MyModalComponent implements OnInit {
 
-  constructor(public modalController: ModalController) { 
+  constructor(public modalController: ModalController) {
 
   }
 
   ngOnInit() {
-    
+
   }
   async presentModal() {
     const modal = await this.modalController.create({
@@ -36,6 +36,9 @@ export class MyModalComponent implements OnInit {
   }
   async presentModalCities() {
     return  await this.Present(ModalCitiesPageComponent,"my-custom-class")
+  }
+  async presentModalCustomSearch() {
+    return  await this.Present(CustomSearchComponent,"my-custom-search-class")
   }
 // function to show modeal
   async Present(Component,css){
